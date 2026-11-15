@@ -1,0 +1,30 @@
+{
+  "name": "pida-website",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Website for Pearl Integrated Development Agency (PIDA), Busia, Uganda",
+  "scripts": {
+    "dev": "vite",
+    "server": "node --disable-warning=ExperimentalWarning --watch server/index.js",
+    "build": "vite build",
+    "start": "vite build && node --disable-warning=ExperimentalWarning server/index.js",
+    "serve": "node --disable-warning=ExperimentalWarning server/index.js",
+    "create-admin": "node --disable-warning=ExperimentalWarning server/create-admin.js",
+    "import-supabase": "node --disable-warning=ExperimentalWarning server/import-supabase.js",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.28.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "vite": "^5.4.11"
+  },
+  "engines": {
+    "node": ">=22.13"
+  }
+}
